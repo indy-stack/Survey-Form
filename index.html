@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title"> keyboard usage Survey</h1>
+    <p id="description"><em>Thank you for taking the time to fill this survey</em></p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name:</label> <input id="name" type="text" placeholder="Enter your name"
+                required>
+            <label id="email-label" for="email">Email:</label> <input id="email" type="email"
+                placeholder="Enter your email" required>
+            <label id="number-label" for="age"> Age:</label> <input id="number" type="number" min="15" max="120"
+                placeholder="Enter your age">
+        </fieldset>
+        <fieldset>
+            <label for="dropdown"> What kind of keyboard do you use most frequently?</label>
+            <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1"> Laptop keyboard</option>
+                <option value="2">Basic external keyboard</option>
+                <option value="3">Ergonomic keyboard</option>
+                <option value="4">Mechanical keyboard</option>
+            </select>
+            <label for="radio">Have you ever had shoulder or wrist problems while typing?</label>
+            <input type="radio" value="yes" name="typing-problem"> Yes
+            <input type="radio" value="no" name="typing-problem"> No
+
+            <label for="checkbox" class="in-line"> Have you ever expereince any of the following while typing for long
+                period of times?</label>
+            <label><input type="checkbox" class="in-line" value="1">Trigger finger.</label>
+            <label><input type="checkbox" class="in-line" value="2"> Carpal Tunnel Syndrome.</label>
+            <label><input type="checkbox" class="in-line" value="3"> Wrist pain.</label>
+            <label><input type="checkbox" class="in-line" value="4"> Shoulder pain.</label>
+            <label> <input type="checkbox" class="in-line" value="5"> Other</label>
+
+            <label for="textarea"> Express in a few sentences why do you prefer a keyboard type over the other.</label>
+            <textarea name="opinion" rows="3" cols="20"></textarea>
+        </fieldset>
+        <fieldset>
+            <button id="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
